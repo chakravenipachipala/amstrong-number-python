@@ -1,0 +1,13 @@
+#Write a program to print give number is Armstrong or not.
+n = int(input('enter a number:'))
+temp = n
+sum = 0
+x = len(str(n))
+while (n>0):
+    r = n %10
+    sum = sum + r ** x
+    n = n//10
+if (temp == sum):
+    print('it is a amstrong number')
+else:
+    print('it is not a not a amstrong number')
